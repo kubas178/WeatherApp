@@ -1,0 +1,70 @@
+.header{
+    height: 50%;
+}
+
+.day{
+    top:10%;
+}
+
+.letters{
+    font-size: 25px;
+}
+
+.sup{
+    top:50%;
+    font-size: 17px;
+}
+
+.sdown{
+    top:50%;
+    width:auto;
+    left:75%;
+    font-size: 17px;
+}
+.sunset-value{
+    top:65%;
+    font-size: 17px;
+}
+
+.sunrise-value{
+    top:65%;
+    font-size: 17px;
+}
+
+.name-of-country{
+    font-size: 35px;
+}
+
+.weather{
+    top: 43%;
+    font-size: 35px;
+}
+
+.icon-main{
+    transform: translateY(30%);
+    width: 100px;
+    height: 100px;
+}
+
+.down .line-up{
+top:25%;
+}
+
+.five-day{
+    display: inline;
+}
+
+#MyClockDisplay{
+    display: inline;
+}
+
+.search-mobile{
+    display:none;
+}
+.search-desktop{
+    display: inline;
+}
+
+input{
+    display: inline;
+}

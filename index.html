@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media='screen and (min-width: 576px)' href="/css/small.css">
+    <link rel="stylesheet" media='screen and (min-width: 768px)' href="/css/medium.css">
+    <link rel="stylesheet" media='screen and (min-width: 992px)' href="/css/large.css">
+    <script src="https://kit.fontawesome.com/d56855a003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <input id="cityName" class="form__field" placeholder="Enter city name" id='name'  onclick="this.select()" 
+    onKeyDown="if(event.keyCode==13) getInputValue();">
+    <button class="search search-desktop" type="button" 
+    onclick="getInputValue()"> 
+    <i class="fas fa-search-location"></i>
+    </button> 
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+</nav>
+    <div class="main">
+        <div class="header">
+            <div class="whole">
+            <h2 id="temp" class="temperature"></h2>
+            <h3 id = "description" class="letters weather"></h3>
+            <div class="infos">
+                <div class="humidity">
+                    <h4 class="letters titles humidity-title">Humidity</h4>
+                    <p id="humidit" class="letters values humidity-value"></p>
+                </div>
+                <div class="line-up"></div>
+                <div class="wind">
+                    <h4 class=" letters titles wind-title">Wind</h4>
+                    <p id="winds" class=" letters values wind-value"></p>
+                </div>
+            </div>
+            </div>
+            <div class="country">
+                <h2 id="city" class="letters name-of-country"></h2>
+                <div class="underline"></div>
+                <div id="icon"></div>
+            </div>
+        </div>
+        <div class="down">
+            <div class="day">
+            <img class="sunrise imgs" src="/img/sunrise.png" alt="sunrise icon">
+            <p class="letters sup">Sunrise at</p>
+            <p id="sup" class="letters sunrise-value"></p>
+            <img class="sunset imgs" src="/img/sunset.png" alt="sunset icon">
+            <p class="letters sdown">Sunset at</p>
+            <p id="sdown" class="letters sunset-value"></p>
+            </div>
+            <div class="line-up"></div>
+            <div class="five-day">
+                <div id="one" class="long">
+                    <div id="iconOne"></div>
+                    <h5 class="many" id="first-day"></h5>
+                    <p class="manyw" id="first-weather"></p>
+                </div>
+                <div id="two" class="long">
+                    <div id="iconTwo"></div>
+                    <h5 class="many" id="second-day"></h5>
+                    <p class="manyw" id="second-weather"></p>
+                </div>
+                <div id="three" class="long">
+                    <div id="iconThree"></div>
+                    <h5 class="many" id="third-day"></h5>
+                    <p class="manyw" id="third-weather"></p>
+                </div>
+                <div id="four" class="long">
+                    <div id="iconFour"></div>
+                    <h5 class="many" id="fourth-day"></h5>
+                    <p class="manyw" id="fourth-weather"></p>
+                </div>
+                <div id="five" class="long">
+                    <div id="iconFive"></div>
+                    <h5 class="many" id="fifth-day"></h5>
+                    <p class="manyw" id="fifth-weather"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc7lNZXGGY8v9sPMsizxdOK_dQ2-lY-jw&libraries=places&callback=initMap">
+</script> -->
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>

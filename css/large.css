@@ -1,0 +1,112 @@
+.country{
+    left: 75%;
+    top:40%;
+}
+.temperature{
+left:50%;
+font-size: 90px;
+}
+
+.weather{
+    left:50%;
+    margin:10px;
+}
+
+.infos{
+    width: 50%;
+    top:45%;
+}
+
+.day{
+    width: 30%;
+    height: 100%;
+}
+
+.icon-main{
+    transform: translateY(0); 
+    width: 200px;
+    height: 200px;
+}
+
+.sup{
+    top:25%;
+    left:50%;
+    white-space: nowrap
+}
+
+.sunrise-value{
+    left:50%;
+    top:33%;
+}
+
+.imgs{
+    left:50%;
+}
+
+.sunset{
+    top:50%;
+}
+
+.sdown{
+    left: 50%;
+    top:65%;
+}
+
+.sunset-value{
+    left:50%;
+    top:73%;
+}
+
+.down .line-up{
+    left:30%;
+    height: 80%;
+    top:50%;
+    border-radius: 100%;
+}
+
+.five-day{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    top:60%;
+    left:65%;
+    width:70%;
+    transform: translate(-50%,-50%);
+}
+
+.manyw{
+    top:60%;
+}
+
+.five-day .long img{
+    position: absolute;
+    top:30%;
+}
+
+@media (min-width: 1300px) {
+    .five-day .long img {
+        margin: auto;
+        transform: translateX(5%);
+    }
+  }
+
+  @media (min-width: 1450px) {
+    .five-day .long img {
+        margin: auto;
+        transform: translateX(10%);
+    }
+  }
+
+@media (min-width: 1600px) {
+    .five-day .long img {
+        margin: auto;
+        transform: translateX(15%);
+    }
+  }
+
+@media (min-width: 1800px) {
+    .five-day .long img {
+        margin: auto;
+        transform: translateX(25%);
+    }
+  }
